@@ -32,10 +32,17 @@ penguins <- penguins
 
 data = penguins
 
-ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) + geom_point()
+ggplot(data = penguins, 
+       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) + 
+  geom_point() + 
+  scale_color_viridis_d()
 ```
 
 ```{r}
-ggplot(data = penguins, aes(x = species, y = flipper_length_mm, color = species)) + geom_jitter() + labs(title = "Flipper Length by Species", x = "Species", y = "Flipper Length")
+ggplot(data = penguins, 
+       aes(x = species, y = flipper_length_mm, color = species, )) + 
+  geom_jitter() +
+  labs(title = "Flipper Length by Species", x = "Species", y = "Flipper Length") + 
+  scale_color_viridis_d()
 ```
 
