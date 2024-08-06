@@ -1,0 +1,13 @@
+---
+title: "Day 2 tasks"
+author: "Leilanie Rubinstein"
+format: html
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
