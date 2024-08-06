@@ -11,3 +11,18 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
+```{r}
+fx <- expression(x^2)
+d_fx <- D(expr = fx, name = "x")
+x = 3
+eval(d_fx)
+```
+
+```{r}
+Pa <- expression(2 * (3*a+2)^4 - 5)
+d_Pa <- D(expr = Pa, name = "a")
+a = 1.2
+eval(d_Pa)
+```
+
+
